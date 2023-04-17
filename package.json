@@ -1,0 +1,71 @@
+{
+  "name": "rathiharvir-react-ui-library",
+  "version": "1.0.1",
+  "main": "build/index.js",
+  "module": "build/index.es.js",
+  "files": [
+    "build"
+  ],
+  "types": "build/index.d.ts",
+  "description": "UI Library",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "storybook": "storybook dev -p 6006",
+    "storybook:export": "build-storybook",
+    "generate": "node ./util/create-component",
+    "prepublishOnly": "npm run build",
+    "build-storybook": "storybook build"
+  },
+  "keywords": [
+    "UI",
+    "Library"
+  ],
+  "author": "Harvir Rathee",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.21.4",
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "@rollup/plugin-node-resolve": "^11.2.1",
+    "@storybook/addon-essentials": "^7.0.5",
+    "@storybook/addon-interactions": "^7.0.5",
+    "@storybook/addon-links": "^7.0.5",
+    "@storybook/addon-styling": "^1.0.1",
+    "@storybook/blocks": "^7.0.5",
+    "@storybook/react": "^7.0.5",
+    "@storybook/react-webpack5": "^7.0.5",
+    "@storybook/testing-library": "^0.0.14-next.2",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@types/jest": "^24.9.1",
+    "@types/react": "^16.14.14",
+    "@types/react-dom": "^16.9.14",
+    "autoprefixer": "^10.4.13",
+    "babel-loader": "^8.3.0",
+    "babel-preset-react-app": "^10.0.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.6.3",
+    "node-sass": "^8.0.0",
+    "prop-types": "^15.8.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "rollup": "^2.56.3",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-typescript2": "^0.29.0",
+    "sass": "^1.62.0",
+    "sass-loader": "^13.2.2",
+    "storybook": "^7.0.5",
+    "ts-jest": "^26.5.6",
+    "typescript": "^4.8.4"
+  }
+}
